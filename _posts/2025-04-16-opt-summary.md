@@ -410,7 +410,9 @@ We present the lower and upper bound results in tables below<d-footnote>. Given 
 |                         |         |                                                     |                                  |                                                           |
 | NC-SC, Stoc, SS  | Primal Stationarity        | $\Omega\left(\kappa\Delta L\epsilon^{-4}\right)$ | $\mathcal{O}\left(\kappa\Delta L\epsilon^{-4}\right)$ |  <d-cite key="zhang2026tightlowerboundsstochastic"></d-cite>, Theorem 4.1   |  <d-cite key="zhang2022sapd+"></d-cite>,  Theorem 3                                     |
 | NC-SC, Stoc, IS  | Primal Stationarity        | Unknown | $\mathcal{O}\left(\kappa^2\Delta L\epsilon^{-3}\right)$ |  /        |  <d-cite key="zhang2022sapd+"></d-cite>, Theorem 4 |
+| NC-SC, Stoc, AS | Moreau-envelope Stationarity | $\Omega\left(\min\left\{\kappa^{3/2}\epsilon^{-3},\kappa\epsilon^{-4}\right\}\right)$ | $\mathcal{O}\left(\kappa^{3/2}\epsilon^{-3}\right)$ | <d-cite key="zhang2026tightlowerboundsstochastic"></d-cite>, Corollary 5.2 | <d-cite key="zhang2026singleloop"></d-cite>, Theorem 6 |
 | NC-C, Stoc, SS   | Near-stationarity        | Unknown | $\mathcal{O}\left(L^3\epsilon^{-6}\right)$              |  /        |  <d-cite key="zhang2022sapd+"></d-cite>, Theorem 6  |
+| NC-C, Stoc, AS | Near-stationarity (OS) | $\Omega\left(L^2D\Delta\epsilon^{-3}+L^3D^2\Delta\sigma^2\epsilon^{-6}\right)$ | $\mathcal{O}\left(\epsilon^{-4}+\chi\epsilon^{-6}\right)$ | <d-cite key="SongXu2026NCCLowerBound"></d-cite>, Theorem 4.8 | <d-cite key="zhang2026singleloop"></d-cite>, Theorem 7 |
 | NC-PL, Stoc, SS       | Primal Stationarity | Unknown | $\mathcal{O}(\kappa^2\epsilon^{-4})$                   | /        | <d-cite key="yang2022faster"></d-cite>, Corollary 4.1         |
 | NC-PL, Stoc, IS       | Primal Stationarity | Unknown | $\tilde{\mathcal{O}}(\epsilon^{-3})$                   | /        | <d-cite key="huang2025enhanced"></d-cite>, Theorem 1         |
 | WC-SC, Stoc, NS       | Near-Stationarity | Unknown | $\mathcal{O}(\epsilon^{-4})$                   | /        | <d-cite key="yan2020optimal"></d-cite>, Theorem 2         |
@@ -421,7 +423,8 @@ We present the lower and upper bound results in tables below<d-footnote>. Given 
 
 1. References: <d-cite key="zhang2021complexity"></d-cite> <d-cite key="yang2020catalyst"></d-cite> <d-cite key="zhang2022sapd+"></d-cite> <d-cite key="li2021complexity"></d-cite> <d-cite key="yang2022faster"></d-cite> <d-cite key="yan2020optimal"></d-cite> <d-cite key="chen2022faster"></d-cite> <d-cite key="huang2025enhanced"></d-cite><d-cite key="zhang2026tightlowerboundsstochastic"></d-cite>
 2. By further assuming the uniqueness of inner maximizer, the [NC-PL, FS, IS] case can be further improved, refer to <d-cite key="chen2022faster"></d-cite> (Theorem 6.2)
-
+3. For the [NC-C, Stoc, AS] case, OS denotes Moreau-envelope optimization stationarity, and $\chi=\ell/L$, where $\ell$ is the mean-square smoothness constant. The lower bound applies to zero-respecting randomized algorithms under $\epsilon\leq c\min\{\sqrt{L\Delta},LD\}$ and $\sigma\leq D\bar{L}/4$. 
+4. For the [NC-SC, Stoc, AS] case, the lower bound applies to zero-respecting algorithms with any fixed finite shared-sample batch size, where $\kappa_{\rm AS}=\bar{L}/\mu$. Corollary 5.2 extends the result to Moreau-envelope stationarity. In the upper bound, $\kappa=L/\mu$ and $\chi=\ell/L$. 
 
 </div>
 
